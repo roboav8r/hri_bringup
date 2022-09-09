@@ -1,0 +1,14 @@
+<launch>
+
+
+    <!-- Launch the depthai_ros camera with yolov4 -->
+    <include file="$(find depthai_examples)/launch/yolov4_publisher.launch" />
+
+    <!-- Launch hokuyo node -->
+    <include file="$(find urg_node)/launch/urg_lidar.launch" />
+
+    <!-- Publish static transform -->
+    <node pkg="tf" type="static_transform_publisher" name="oak_to_laser" args="-0.35 0 -0.80 0 0 0 /oak_rgb_camera_optical_frame /laser 100"/> 
+
+
+</launch>

@@ -1,0 +1,1817 @@
+Panels:
+  - Class: rviz/Displays
+    Help Height: 78
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Global Options1
+        - /Status1
+        - /TF1
+        - /TF1/Status1
+      Splitter Ratio: 0.5
+    Tree Height: 549
+  - Class: rviz/Selection
+    Name: Selection
+  - Class: rviz/Tool Properties
+    Expanded:
+      - /2D Pose Estimate1
+      - /2D Nav Goal1
+      - /Publish Point1
+    Name: Tool Properties
+    Splitter Ratio: 0.5886790156364441
+  - Class: rviz/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+  - Class: rviz/Time
+    Experimental: false
+    Name: Time
+    SyncMode: 0
+    SyncSource: ""
+Preferences:
+  PromptSaveOnExit: true
+Toolbars:
+  toolButtonStyle: 2
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 1
+      Class: rviz/Grid
+      Color: 160; 160; 164
+      Enabled: true
+      Line Style:
+        Line Width: 0.029999999329447746
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 10
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Class: rviz/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        All Enabled: true
+        body_065bb:
+          Value: true
+        body_078a4:
+          Value: true
+        body_11a58:
+          Value: true
+        body_13173:
+          Value: true
+        body_15b87:
+          Value: true
+        body_300cd:
+          Value: true
+        body_30bda:
+          Value: true
+        body_3a4fd:
+          Value: true
+        body_3adfa:
+          Value: true
+        body_42a79:
+          Value: true
+        body_499ab:
+          Value: true
+        body_51b41:
+          Value: true
+        body_5668a:
+          Value: true
+        body_5aa08:
+          Value: true
+        body_69ba8:
+          Value: true
+        body_6ffdd:
+          Value: true
+        body_7745c:
+          Value: true
+        body_8a8ca:
+          Value: true
+        body_8aafa:
+          Value: true
+        body_9af23:
+          Value: true
+        body_a05cc:
+          Value: true
+        body_a122b:
+          Value: true
+        body_a1a4f:
+          Value: true
+        body_a6659:
+          Value: true
+        body_b0119:
+          Value: true
+        body_c7cd2:
+          Value: true
+        body_d88cc:
+          Value: true
+        body_fbc07:
+          Value: true
+        camera_color_frame:
+          Value: true
+        camera_color_optical_frame:
+          Value: true
+        camera_depth_frame:
+          Value: true
+        camera_depth_optical_frame:
+          Value: true
+        camera_link:
+          Value: true
+        head_065bb:
+          Value: true
+        head_078a4:
+          Value: true
+        head_11a58:
+          Value: true
+        head_13173:
+          Value: true
+        head_15b87:
+          Value: true
+        head_2f683:
+          Value: true
+        head_300cd:
+          Value: true
+        head_30bda:
+          Value: true
+        head_3a4fd:
+          Value: true
+        head_3adfa:
+          Value: true
+        head_412ff:
+          Value: true
+        head_42a79:
+          Value: true
+        head_499ab:
+          Value: true
+        head_51b41:
+          Value: true
+        head_5668a:
+          Value: true
+        head_5a3c3:
+          Value: true
+        head_5aa08:
+          Value: true
+        head_69ba8:
+          Value: true
+        head_6ffdd:
+          Value: true
+        head_7745c:
+          Value: true
+        head_8a8ca:
+          Value: true
+        head_8aafa:
+          Value: true
+        head_9af23:
+          Value: true
+        head_9d325:
+          Value: true
+        head_a05cc:
+          Value: true
+        head_a122b:
+          Value: true
+        head_a1a4f:
+          Value: true
+        head_a21c9:
+          Value: true
+        head_a6659:
+          Value: true
+        head_aca0a:
+          Value: true
+        head_ad675:
+          Value: true
+        head_b0119:
+          Value: true
+        head_ba178:
+          Value: true
+        head_c7cd2:
+          Value: true
+        head_d3175:
+          Value: true
+        head_d4025:
+          Value: true
+        head_d88cc:
+          Value: true
+        head_f1451:
+          Value: true
+        head_fbc07:
+          Value: true
+        head_p_065bb:
+          Value: true
+        head_p_078a4:
+          Value: true
+        head_p_11a58:
+          Value: true
+        head_p_13173:
+          Value: true
+        head_p_15b87:
+          Value: true
+        head_p_2f683:
+          Value: true
+        head_p_300cd:
+          Value: true
+        head_p_30bda:
+          Value: true
+        head_p_3a4fd:
+          Value: true
+        head_p_3adfa:
+          Value: true
+        head_p_412ff:
+          Value: true
+        head_p_42a79:
+          Value: true
+        head_p_499ab:
+          Value: true
+        head_p_51b41:
+          Value: true
+        head_p_5668a:
+          Value: true
+        head_p_5a3c3:
+          Value: true
+        head_p_5aa08:
+          Value: true
+        head_p_69ba8:
+          Value: true
+        head_p_6ffdd:
+          Value: true
+        head_p_7745c:
+          Value: true
+        head_p_8a8ca:
+          Value: true
+        head_p_8aafa:
+          Value: true
+        head_p_9af23:
+          Value: true
+        head_p_9d325:
+          Value: true
+        head_p_a05cc:
+          Value: true
+        head_p_a122b:
+          Value: true
+        head_p_a1a4f:
+          Value: true
+        head_p_a21c9:
+          Value: true
+        head_p_a6659:
+          Value: true
+        head_p_aca0a:
+          Value: true
+        head_p_ad675:
+          Value: true
+        head_p_b0119:
+          Value: true
+        head_p_ba178:
+          Value: true
+        head_p_c7cd2:
+          Value: true
+        head_p_d3175:
+          Value: true
+        head_p_d4025:
+          Value: true
+        head_p_d88cc:
+          Value: true
+        head_p_f1451:
+          Value: true
+        head_p_fbc07:
+          Value: true
+        head_r_065bb:
+          Value: true
+        head_r_078a4:
+          Value: true
+        head_r_11a58:
+          Value: true
+        head_r_13173:
+          Value: true
+        head_r_15b87:
+          Value: true
+        head_r_300cd:
+          Value: true
+        head_r_30bda:
+          Value: true
+        head_r_3a4fd:
+          Value: true
+        head_r_3adfa:
+          Value: true
+        head_r_42a79:
+          Value: true
+        head_r_499ab:
+          Value: true
+        head_r_51b41:
+          Value: true
+        head_r_5668a:
+          Value: true
+        head_r_5aa08:
+          Value: true
+        head_r_69ba8:
+          Value: true
+        head_r_6ffdd:
+          Value: true
+        head_r_7745c:
+          Value: true
+        head_r_8a8ca:
+          Value: true
+        head_r_8aafa:
+          Value: true
+        head_r_9af23:
+          Value: true
+        head_r_a05cc:
+          Value: true
+        head_r_a122b:
+          Value: true
+        head_r_a1a4f:
+          Value: true
+        head_r_a6659:
+          Value: true
+        head_r_b0119:
+          Value: true
+        head_r_c7cd2:
+          Value: true
+        head_r_d88cc:
+          Value: true
+        head_r_fbc07:
+          Value: true
+        head_y_065bb:
+          Value: true
+        head_y_078a4:
+          Value: true
+        head_y_11a58:
+          Value: true
+        head_y_13173:
+          Value: true
+        head_y_15b87:
+          Value: true
+        head_y_300cd:
+          Value: true
+        head_y_30bda:
+          Value: true
+        head_y_3a4fd:
+          Value: true
+        head_y_3adfa:
+          Value: true
+        head_y_42a79:
+          Value: true
+        head_y_499ab:
+          Value: true
+        head_y_51b41:
+          Value: true
+        head_y_5668a:
+          Value: true
+        head_y_5aa08:
+          Value: true
+        head_y_69ba8:
+          Value: true
+        head_y_6ffdd:
+          Value: true
+        head_y_7745c:
+          Value: true
+        head_y_8a8ca:
+          Value: true
+        head_y_8aafa:
+          Value: true
+        head_y_9af23:
+          Value: true
+        head_y_a05cc:
+          Value: true
+        head_y_a122b:
+          Value: true
+        head_y_a1a4f:
+          Value: true
+        head_y_a6659:
+          Value: true
+        head_y_b0119:
+          Value: true
+        head_y_c7cd2:
+          Value: true
+        head_y_d88cc:
+          Value: true
+        head_y_fbc07:
+          Value: true
+        l_ankle_065bb:
+          Value: true
+        l_ankle_078a4:
+          Value: true
+        l_ankle_11a58:
+          Value: true
+        l_ankle_13173:
+          Value: true
+        l_ankle_15b87:
+          Value: true
+        l_ankle_2f683:
+          Value: true
+        l_ankle_300cd:
+          Value: true
+        l_ankle_30bda:
+          Value: true
+        l_ankle_3a4fd:
+          Value: true
+        l_ankle_3adfa:
+          Value: true
+        l_ankle_412ff:
+          Value: true
+        l_ankle_42a79:
+          Value: true
+        l_ankle_499ab:
+          Value: true
+        l_ankle_51b41:
+          Value: true
+        l_ankle_5668a:
+          Value: true
+        l_ankle_5a3c3:
+          Value: true
+        l_ankle_5aa08:
+          Value: true
+        l_ankle_69ba8:
+          Value: true
+        l_ankle_6ffdd:
+          Value: true
+        l_ankle_7745c:
+          Value: true
+        l_ankle_8a8ca:
+          Value: true
+        l_ankle_8aafa:
+          Value: true
+        l_ankle_9af23:
+          Value: true
+        l_ankle_9d325:
+          Value: true
+        l_ankle_a05cc:
+          Value: true
+        l_ankle_a122b:
+          Value: true
+        l_ankle_a1a4f:
+          Value: true
+        l_ankle_a21c9:
+          Value: true
+        l_ankle_a6659:
+          Value: true
+        l_ankle_aca0a:
+          Value: true
+        l_ankle_ad675:
+          Value: true
+        l_ankle_b0119:
+          Value: true
+        l_ankle_ba178:
+          Value: true
+        l_ankle_c7cd2:
+          Value: true
+        l_ankle_d3175:
+          Value: true
+        l_ankle_d4025:
+          Value: true
+        l_ankle_d88cc:
+          Value: true
+        l_ankle_f1451:
+          Value: true
+        l_ankle_fbc07:
+          Value: true
+        l_elbow_065bb:
+          Value: true
+        l_elbow_078a4:
+          Value: true
+        l_elbow_11a58:
+          Value: true
+        l_elbow_13173:
+          Value: true
+        l_elbow_15b87:
+          Value: true
+        l_elbow_2f683:
+          Value: true
+        l_elbow_300cd:
+          Value: true
+        l_elbow_30bda:
+          Value: true
+        l_elbow_3a4fd:
+          Value: true
+        l_elbow_3adfa:
+          Value: true
+        l_elbow_412ff:
+          Value: true
+        l_elbow_42a79:
+          Value: true
+        l_elbow_499ab:
+          Value: true
+        l_elbow_51b41:
+          Value: true
+        l_elbow_5668a:
+          Value: true
+        l_elbow_5a3c3:
+          Value: true
+        l_elbow_5aa08:
+          Value: true
+        l_elbow_69ba8:
+          Value: true
+        l_elbow_6ffdd:
+          Value: true
+        l_elbow_7745c:
+          Value: true
+        l_elbow_8a8ca:
+          Value: true
+        l_elbow_8aafa:
+          Value: true
+        l_elbow_9af23:
+          Value: true
+        l_elbow_9d325:
+          Value: true
+        l_elbow_a05cc:
+          Value: true
+        l_elbow_a122b:
+          Value: true
+        l_elbow_a1a4f:
+          Value: true
+        l_elbow_a21c9:
+          Value: true
+        l_elbow_a6659:
+          Value: true
+        l_elbow_aca0a:
+          Value: true
+        l_elbow_ad675:
+          Value: true
+        l_elbow_b0119:
+          Value: true
+        l_elbow_ba178:
+          Value: true
+        l_elbow_c7cd2:
+          Value: true
+        l_elbow_d3175:
+          Value: true
+        l_elbow_d4025:
+          Value: true
+        l_elbow_d88cc:
+          Value: true
+        l_elbow_f1451:
+          Value: true
+        l_elbow_fbc07:
+          Value: true
+        l_hip_065bb:
+          Value: true
+        l_hip_078a4:
+          Value: true
+        l_hip_11a58:
+          Value: true
+        l_hip_13173:
+          Value: true
+        l_hip_15b87:
+          Value: true
+        l_hip_300cd:
+          Value: true
+        l_hip_30bda:
+          Value: true
+        l_hip_3a4fd:
+          Value: true
+        l_hip_3adfa:
+          Value: true
+        l_hip_42a79:
+          Value: true
+        l_hip_499ab:
+          Value: true
+        l_hip_51b41:
+          Value: true
+        l_hip_5668a:
+          Value: true
+        l_hip_5aa08:
+          Value: true
+        l_hip_69ba8:
+          Value: true
+        l_hip_6ffdd:
+          Value: true
+        l_hip_7745c:
+          Value: true
+        l_hip_8a8ca:
+          Value: true
+        l_hip_8aafa:
+          Value: true
+        l_hip_9af23:
+          Value: true
+        l_hip_a05cc:
+          Value: true
+        l_hip_a122b:
+          Value: true
+        l_hip_a1a4f:
+          Value: true
+        l_hip_a6659:
+          Value: true
+        l_hip_b0119:
+          Value: true
+        l_hip_c7cd2:
+          Value: true
+        l_hip_d88cc:
+          Value: true
+        l_hip_fbc07:
+          Value: true
+        l_knee_065bb:
+          Value: true
+        l_knee_078a4:
+          Value: true
+        l_knee_11a58:
+          Value: true
+        l_knee_13173:
+          Value: true
+        l_knee_15b87:
+          Value: true
+        l_knee_2f683:
+          Value: true
+        l_knee_300cd:
+          Value: true
+        l_knee_30bda:
+          Value: true
+        l_knee_3a4fd:
+          Value: true
+        l_knee_3adfa:
+          Value: true
+        l_knee_412ff:
+          Value: true
+        l_knee_42a79:
+          Value: true
+        l_knee_499ab:
+          Value: true
+        l_knee_51b41:
+          Value: true
+        l_knee_5668a:
+          Value: true
+        l_knee_5a3c3:
+          Value: true
+        l_knee_5aa08:
+          Value: true
+        l_knee_69ba8:
+          Value: true
+        l_knee_6ffdd:
+          Value: true
+        l_knee_7745c:
+          Value: true
+        l_knee_8a8ca:
+          Value: true
+        l_knee_8aafa:
+          Value: true
+        l_knee_9af23:
+          Value: true
+        l_knee_9d325:
+          Value: true
+        l_knee_a05cc:
+          Value: true
+        l_knee_a122b:
+          Value: true
+        l_knee_a1a4f:
+          Value: true
+        l_knee_a21c9:
+          Value: true
+        l_knee_a6659:
+          Value: true
+        l_knee_aca0a:
+          Value: true
+        l_knee_ad675:
+          Value: true
+        l_knee_b0119:
+          Value: true
+        l_knee_ba178:
+          Value: true
+        l_knee_c7cd2:
+          Value: true
+        l_knee_d3175:
+          Value: true
+        l_knee_d4025:
+          Value: true
+        l_knee_d88cc:
+          Value: true
+        l_knee_f1451:
+          Value: true
+        l_knee_fbc07:
+          Value: true
+        l_p_shoulder_065bb:
+          Value: true
+        l_p_shoulder_078a4:
+          Value: true
+        l_p_shoulder_11a58:
+          Value: true
+        l_p_shoulder_13173:
+          Value: true
+        l_p_shoulder_15b87:
+          Value: true
+        l_p_shoulder_300cd:
+          Value: true
+        l_p_shoulder_30bda:
+          Value: true
+        l_p_shoulder_3a4fd:
+          Value: true
+        l_p_shoulder_3adfa:
+          Value: true
+        l_p_shoulder_42a79:
+          Value: true
+        l_p_shoulder_499ab:
+          Value: true
+        l_p_shoulder_51b41:
+          Value: true
+        l_p_shoulder_5668a:
+          Value: true
+        l_p_shoulder_5aa08:
+          Value: true
+        l_p_shoulder_69ba8:
+          Value: true
+        l_p_shoulder_6ffdd:
+          Value: true
+        l_p_shoulder_7745c:
+          Value: true
+        l_p_shoulder_8a8ca:
+          Value: true
+        l_p_shoulder_8aafa:
+          Value: true
+        l_p_shoulder_9af23:
+          Value: true
+        l_p_shoulder_a05cc:
+          Value: true
+        l_p_shoulder_a122b:
+          Value: true
+        l_p_shoulder_a1a4f:
+          Value: true
+        l_p_shoulder_a6659:
+          Value: true
+        l_p_shoulder_b0119:
+          Value: true
+        l_p_shoulder_c7cd2:
+          Value: true
+        l_p_shoulder_d88cc:
+          Value: true
+        l_p_shoulder_fbc07:
+          Value: true
+        l_shoulder_065bb:
+          Value: true
+        l_shoulder_078a4:
+          Value: true
+        l_shoulder_11a58:
+          Value: true
+        l_shoulder_13173:
+          Value: true
+        l_shoulder_15b87:
+          Value: true
+        l_shoulder_300cd:
+          Value: true
+        l_shoulder_30bda:
+          Value: true
+        l_shoulder_3a4fd:
+          Value: true
+        l_shoulder_3adfa:
+          Value: true
+        l_shoulder_42a79:
+          Value: true
+        l_shoulder_499ab:
+          Value: true
+        l_shoulder_51b41:
+          Value: true
+        l_shoulder_5668a:
+          Value: true
+        l_shoulder_5aa08:
+          Value: true
+        l_shoulder_69ba8:
+          Value: true
+        l_shoulder_6ffdd:
+          Value: true
+        l_shoulder_7745c:
+          Value: true
+        l_shoulder_8a8ca:
+          Value: true
+        l_shoulder_8aafa:
+          Value: true
+        l_shoulder_9af23:
+          Value: true
+        l_shoulder_a05cc:
+          Value: true
+        l_shoulder_a122b:
+          Value: true
+        l_shoulder_a1a4f:
+          Value: true
+        l_shoulder_a6659:
+          Value: true
+        l_shoulder_b0119:
+          Value: true
+        l_shoulder_c7cd2:
+          Value: true
+        l_shoulder_d88cc:
+          Value: true
+        l_shoulder_fbc07:
+          Value: true
+        l_wrist_065bb:
+          Value: true
+        l_wrist_078a4:
+          Value: true
+        l_wrist_11a58:
+          Value: true
+        l_wrist_13173:
+          Value: true
+        l_wrist_15b87:
+          Value: true
+        l_wrist_2f683:
+          Value: true
+        l_wrist_300cd:
+          Value: true
+        l_wrist_30bda:
+          Value: true
+        l_wrist_3a4fd:
+          Value: true
+        l_wrist_3adfa:
+          Value: true
+        l_wrist_412ff:
+          Value: true
+        l_wrist_42a79:
+          Value: true
+        l_wrist_499ab:
+          Value: true
+        l_wrist_51b41:
+          Value: true
+        l_wrist_5668a:
+          Value: true
+        l_wrist_5a3c3:
+          Value: true
+        l_wrist_5aa08:
+          Value: true
+        l_wrist_69ba8:
+          Value: true
+        l_wrist_6ffdd:
+          Value: true
+        l_wrist_7745c:
+          Value: true
+        l_wrist_8a8ca:
+          Value: true
+        l_wrist_8aafa:
+          Value: true
+        l_wrist_9af23:
+          Value: true
+        l_wrist_9d325:
+          Value: true
+        l_wrist_a05cc:
+          Value: true
+        l_wrist_a122b:
+          Value: true
+        l_wrist_a1a4f:
+          Value: true
+        l_wrist_a21c9:
+          Value: true
+        l_wrist_a6659:
+          Value: true
+        l_wrist_aca0a:
+          Value: true
+        l_wrist_ad675:
+          Value: true
+        l_wrist_b0119:
+          Value: true
+        l_wrist_ba178:
+          Value: true
+        l_wrist_c7cd2:
+          Value: true
+        l_wrist_d3175:
+          Value: true
+        l_wrist_d4025:
+          Value: true
+        l_wrist_d88cc:
+          Value: true
+        l_wrist_f1451:
+          Value: true
+        l_wrist_fbc07:
+          Value: true
+        l_y_hip_065bb:
+          Value: true
+        l_y_hip_078a4:
+          Value: true
+        l_y_hip_11a58:
+          Value: true
+        l_y_hip_13173:
+          Value: true
+        l_y_hip_15b87:
+          Value: true
+        l_y_hip_300cd:
+          Value: true
+        l_y_hip_30bda:
+          Value: true
+        l_y_hip_3a4fd:
+          Value: true
+        l_y_hip_3adfa:
+          Value: true
+        l_y_hip_42a79:
+          Value: true
+        l_y_hip_499ab:
+          Value: true
+        l_y_hip_51b41:
+          Value: true
+        l_y_hip_5668a:
+          Value: true
+        l_y_hip_5aa08:
+          Value: true
+        l_y_hip_69ba8:
+          Value: true
+        l_y_hip_6ffdd:
+          Value: true
+        l_y_hip_7745c:
+          Value: true
+        l_y_hip_8a8ca:
+          Value: true
+        l_y_hip_8aafa:
+          Value: true
+        l_y_hip_9af23:
+          Value: true
+        l_y_hip_a05cc:
+          Value: true
+        l_y_hip_a122b:
+          Value: true
+        l_y_hip_a1a4f:
+          Value: true
+        l_y_hip_a6659:
+          Value: true
+        l_y_hip_b0119:
+          Value: true
+        l_y_hip_c7cd2:
+          Value: true
+        l_y_hip_d88cc:
+          Value: true
+        l_y_hip_fbc07:
+          Value: true
+        l_y_shoulder_065bb:
+          Value: true
+        l_y_shoulder_078a4:
+          Value: true
+        l_y_shoulder_11a58:
+          Value: true
+        l_y_shoulder_13173:
+          Value: true
+        l_y_shoulder_15b87:
+          Value: true
+        l_y_shoulder_300cd:
+          Value: true
+        l_y_shoulder_30bda:
+          Value: true
+        l_y_shoulder_3a4fd:
+          Value: true
+        l_y_shoulder_3adfa:
+          Value: true
+        l_y_shoulder_42a79:
+          Value: true
+        l_y_shoulder_499ab:
+          Value: true
+        l_y_shoulder_51b41:
+          Value: true
+        l_y_shoulder_5668a:
+          Value: true
+        l_y_shoulder_5aa08:
+          Value: true
+        l_y_shoulder_69ba8:
+          Value: true
+        l_y_shoulder_6ffdd:
+          Value: true
+        l_y_shoulder_7745c:
+          Value: true
+        l_y_shoulder_8a8ca:
+          Value: true
+        l_y_shoulder_8aafa:
+          Value: true
+        l_y_shoulder_9af23:
+          Value: true
+        l_y_shoulder_a05cc:
+          Value: true
+        l_y_shoulder_a122b:
+          Value: true
+        l_y_shoulder_a1a4f:
+          Value: true
+        l_y_shoulder_a6659:
+          Value: true
+        l_y_shoulder_b0119:
+          Value: true
+        l_y_shoulder_c7cd2:
+          Value: true
+        l_y_shoulder_d88cc:
+          Value: true
+        l_y_shoulder_fbc07:
+          Value: true
+        r_ankle_065bb:
+          Value: true
+        r_ankle_078a4:
+          Value: true
+        r_ankle_11a58:
+          Value: true
+        r_ankle_13173:
+          Value: true
+        r_ankle_15b87:
+          Value: true
+        r_ankle_2f683:
+          Value: true
+        r_ankle_300cd:
+          Value: true
+        r_ankle_30bda:
+          Value: true
+        r_ankle_3a4fd:
+          Value: true
+        r_ankle_3adfa:
+          Value: true
+        r_ankle_412ff:
+          Value: true
+        r_ankle_42a79:
+          Value: true
+        r_ankle_499ab:
+          Value: true
+        r_ankle_51b41:
+          Value: true
+        r_ankle_5668a:
+          Value: true
+        r_ankle_5a3c3:
+          Value: true
+        r_ankle_5aa08:
+          Value: true
+        r_ankle_69ba8:
+          Value: true
+        r_ankle_6ffdd:
+          Value: true
+        r_ankle_7745c:
+          Value: true
+        r_ankle_8a8ca:
+          Value: true
+        r_ankle_8aafa:
+          Value: true
+        r_ankle_9af23:
+          Value: true
+        r_ankle_9d325:
+          Value: true
+        r_ankle_a05cc:
+          Value: true
+        r_ankle_a122b:
+          Value: true
+        r_ankle_a1a4f:
+          Value: true
+        r_ankle_a21c9:
+          Value: true
+        r_ankle_a6659:
+          Value: true
+        r_ankle_aca0a:
+          Value: true
+        r_ankle_ad675:
+          Value: true
+        r_ankle_b0119:
+          Value: true
+        r_ankle_ba178:
+          Value: true
+        r_ankle_c7cd2:
+          Value: true
+        r_ankle_d3175:
+          Value: true
+        r_ankle_d4025:
+          Value: true
+        r_ankle_d88cc:
+          Value: true
+        r_ankle_f1451:
+          Value: true
+        r_ankle_fbc07:
+          Value: true
+        r_elbow_065bb:
+          Value: true
+        r_elbow_078a4:
+          Value: true
+        r_elbow_11a58:
+          Value: true
+        r_elbow_13173:
+          Value: true
+        r_elbow_15b87:
+          Value: true
+        r_elbow_2f683:
+          Value: true
+        r_elbow_300cd:
+          Value: true
+        r_elbow_30bda:
+          Value: true
+        r_elbow_3a4fd:
+          Value: true
+        r_elbow_3adfa:
+          Value: true
+        r_elbow_412ff:
+          Value: true
+        r_elbow_42a79:
+          Value: true
+        r_elbow_499ab:
+          Value: true
+        r_elbow_51b41:
+          Value: true
+        r_elbow_5668a:
+          Value: true
+        r_elbow_5a3c3:
+          Value: true
+        r_elbow_5aa08:
+          Value: true
+        r_elbow_69ba8:
+          Value: true
+        r_elbow_6ffdd:
+          Value: true
+        r_elbow_7745c:
+          Value: true
+        r_elbow_8a8ca:
+          Value: true
+        r_elbow_8aafa:
+          Value: true
+        r_elbow_9af23:
+          Value: true
+        r_elbow_9d325:
+          Value: true
+        r_elbow_a05cc:
+          Value: true
+        r_elbow_a122b:
+          Value: true
+        r_elbow_a1a4f:
+          Value: true
+        r_elbow_a21c9:
+          Value: true
+        r_elbow_a6659:
+          Value: true
+        r_elbow_aca0a:
+          Value: true
+        r_elbow_ad675:
+          Value: true
+        r_elbow_b0119:
+          Value: true
+        r_elbow_ba178:
+          Value: true
+        r_elbow_c7cd2:
+          Value: true
+        r_elbow_d3175:
+          Value: true
+        r_elbow_d4025:
+          Value: true
+        r_elbow_d88cc:
+          Value: true
+        r_elbow_f1451:
+          Value: true
+        r_elbow_fbc07:
+          Value: true
+        r_hip_065bb:
+          Value: true
+        r_hip_078a4:
+          Value: true
+        r_hip_11a58:
+          Value: true
+        r_hip_13173:
+          Value: true
+        r_hip_15b87:
+          Value: true
+        r_hip_300cd:
+          Value: true
+        r_hip_30bda:
+          Value: true
+        r_hip_3a4fd:
+          Value: true
+        r_hip_3adfa:
+          Value: true
+        r_hip_42a79:
+          Value: true
+        r_hip_499ab:
+          Value: true
+        r_hip_51b41:
+          Value: true
+        r_hip_5668a:
+          Value: true
+        r_hip_5aa08:
+          Value: true
+        r_hip_69ba8:
+          Value: true
+        r_hip_6ffdd:
+          Value: true
+        r_hip_7745c:
+          Value: true
+        r_hip_8a8ca:
+          Value: true
+        r_hip_8aafa:
+          Value: true
+        r_hip_9af23:
+          Value: true
+        r_hip_a05cc:
+          Value: true
+        r_hip_a122b:
+          Value: true
+        r_hip_a1a4f:
+          Value: true
+        r_hip_a6659:
+          Value: true
+        r_hip_b0119:
+          Value: true
+        r_hip_c7cd2:
+          Value: true
+        r_hip_d88cc:
+          Value: true
+        r_hip_fbc07:
+          Value: true
+        r_knee_065bb:
+          Value: true
+        r_knee_078a4:
+          Value: true
+        r_knee_11a58:
+          Value: true
+        r_knee_13173:
+          Value: true
+        r_knee_15b87:
+          Value: true
+        r_knee_2f683:
+          Value: true
+        r_knee_300cd:
+          Value: true
+        r_knee_30bda:
+          Value: true
+        r_knee_3a4fd:
+          Value: true
+        r_knee_3adfa:
+          Value: true
+        r_knee_412ff:
+          Value: true
+        r_knee_42a79:
+          Value: true
+        r_knee_499ab:
+          Value: true
+        r_knee_51b41:
+          Value: true
+        r_knee_5668a:
+          Value: true
+        r_knee_5a3c3:
+          Value: true
+        r_knee_5aa08:
+          Value: true
+        r_knee_69ba8:
+          Value: true
+        r_knee_6ffdd:
+          Value: true
+        r_knee_7745c:
+          Value: true
+        r_knee_8a8ca:
+          Value: true
+        r_knee_8aafa:
+          Value: true
+        r_knee_9af23:
+          Value: true
+        r_knee_9d325:
+          Value: true
+        r_knee_a05cc:
+          Value: true
+        r_knee_a122b:
+          Value: true
+        r_knee_a1a4f:
+          Value: true
+        r_knee_a21c9:
+          Value: true
+        r_knee_a6659:
+          Value: true
+        r_knee_aca0a:
+          Value: true
+        r_knee_ad675:
+          Value: true
+        r_knee_b0119:
+          Value: true
+        r_knee_ba178:
+          Value: true
+        r_knee_c7cd2:
+          Value: true
+        r_knee_d3175:
+          Value: true
+        r_knee_d4025:
+          Value: true
+        r_knee_d88cc:
+          Value: true
+        r_knee_f1451:
+          Value: true
+        r_knee_fbc07:
+          Value: true
+        r_p_shoulder_065bb:
+          Value: true
+        r_p_shoulder_078a4:
+          Value: true
+        r_p_shoulder_11a58:
+          Value: true
+        r_p_shoulder_13173:
+          Value: true
+        r_p_shoulder_15b87:
+          Value: true
+        r_p_shoulder_300cd:
+          Value: true
+        r_p_shoulder_30bda:
+          Value: true
+        r_p_shoulder_3a4fd:
+          Value: true
+        r_p_shoulder_3adfa:
+          Value: true
+        r_p_shoulder_42a79:
+          Value: true
+        r_p_shoulder_499ab:
+          Value: true
+        r_p_shoulder_51b41:
+          Value: true
+        r_p_shoulder_5668a:
+          Value: true
+        r_p_shoulder_5aa08:
+          Value: true
+        r_p_shoulder_69ba8:
+          Value: true
+        r_p_shoulder_6ffdd:
+          Value: true
+        r_p_shoulder_7745c:
+          Value: true
+        r_p_shoulder_8a8ca:
+          Value: true
+        r_p_shoulder_8aafa:
+          Value: true
+        r_p_shoulder_9af23:
+          Value: true
+        r_p_shoulder_a05cc:
+          Value: true
+        r_p_shoulder_a122b:
+          Value: true
+        r_p_shoulder_a1a4f:
+          Value: true
+        r_p_shoulder_a6659:
+          Value: true
+        r_p_shoulder_b0119:
+          Value: true
+        r_p_shoulder_c7cd2:
+          Value: true
+        r_p_shoulder_d88cc:
+          Value: true
+        r_p_shoulder_fbc07:
+          Value: true
+        r_shoulder_065bb:
+          Value: true
+        r_shoulder_078a4:
+          Value: true
+        r_shoulder_11a58:
+          Value: true
+        r_shoulder_13173:
+          Value: true
+        r_shoulder_15b87:
+          Value: true
+        r_shoulder_300cd:
+          Value: true
+        r_shoulder_30bda:
+          Value: true
+        r_shoulder_3a4fd:
+          Value: true
+        r_shoulder_3adfa:
+          Value: true
+        r_shoulder_42a79:
+          Value: true
+        r_shoulder_499ab:
+          Value: true
+        r_shoulder_51b41:
+          Value: true
+        r_shoulder_5668a:
+          Value: true
+        r_shoulder_5aa08:
+          Value: true
+        r_shoulder_69ba8:
+          Value: true
+        r_shoulder_6ffdd:
+          Value: true
+        r_shoulder_7745c:
+          Value: true
+        r_shoulder_8a8ca:
+          Value: true
+        r_shoulder_8aafa:
+          Value: true
+        r_shoulder_9af23:
+          Value: true
+        r_shoulder_a05cc:
+          Value: true
+        r_shoulder_a122b:
+          Value: true
+        r_shoulder_a1a4f:
+          Value: true
+        r_shoulder_a6659:
+          Value: true
+        r_shoulder_b0119:
+          Value: true
+        r_shoulder_c7cd2:
+          Value: true
+        r_shoulder_d88cc:
+          Value: true
+        r_shoulder_fbc07:
+          Value: true
+        r_wrist_065bb:
+          Value: true
+        r_wrist_078a4:
+          Value: true
+        r_wrist_11a58:
+          Value: true
+        r_wrist_13173:
+          Value: true
+        r_wrist_15b87:
+          Value: true
+        r_wrist_2f683:
+          Value: true
+        r_wrist_300cd:
+          Value: true
+        r_wrist_30bda:
+          Value: true
+        r_wrist_3a4fd:
+          Value: true
+        r_wrist_3adfa:
+          Value: true
+        r_wrist_412ff:
+          Value: true
+        r_wrist_42a79:
+          Value: true
+        r_wrist_499ab:
+          Value: true
+        r_wrist_51b41:
+          Value: true
+        r_wrist_5668a:
+          Value: true
+        r_wrist_5a3c3:
+          Value: true
+        r_wrist_5aa08:
+          Value: true
+        r_wrist_69ba8:
+          Value: true
+        r_wrist_6ffdd:
+          Value: true
+        r_wrist_7745c:
+          Value: true
+        r_wrist_8a8ca:
+          Value: true
+        r_wrist_8aafa:
+          Value: true
+        r_wrist_9af23:
+          Value: true
+        r_wrist_9d325:
+          Value: true
+        r_wrist_a05cc:
+          Value: true
+        r_wrist_a122b:
+          Value: true
+        r_wrist_a1a4f:
+          Value: true
+        r_wrist_a21c9:
+          Value: true
+        r_wrist_a6659:
+          Value: true
+        r_wrist_aca0a:
+          Value: true
+        r_wrist_ad675:
+          Value: true
+        r_wrist_b0119:
+          Value: true
+        r_wrist_ba178:
+          Value: true
+        r_wrist_c7cd2:
+          Value: true
+        r_wrist_d3175:
+          Value: true
+        r_wrist_d4025:
+          Value: true
+        r_wrist_d88cc:
+          Value: true
+        r_wrist_f1451:
+          Value: true
+        r_wrist_fbc07:
+          Value: true
+        r_y_hip_065bb:
+          Value: true
+        r_y_hip_078a4:
+          Value: true
+        r_y_hip_11a58:
+          Value: true
+        r_y_hip_13173:
+          Value: true
+        r_y_hip_15b87:
+          Value: true
+        r_y_hip_300cd:
+          Value: true
+        r_y_hip_30bda:
+          Value: true
+        r_y_hip_3a4fd:
+          Value: true
+        r_y_hip_3adfa:
+          Value: true
+        r_y_hip_42a79:
+          Value: true
+        r_y_hip_499ab:
+          Value: true
+        r_y_hip_51b41:
+          Value: true
+        r_y_hip_5668a:
+          Value: true
+        r_y_hip_5aa08:
+          Value: true
+        r_y_hip_69ba8:
+          Value: true
+        r_y_hip_6ffdd:
+          Value: true
+        r_y_hip_7745c:
+          Value: true
+        r_y_hip_8a8ca:
+          Value: true
+        r_y_hip_8aafa:
+          Value: true
+        r_y_hip_9af23:
+          Value: true
+        r_y_hip_a05cc:
+          Value: true
+        r_y_hip_a122b:
+          Value: true
+        r_y_hip_a1a4f:
+          Value: true
+        r_y_hip_a6659:
+          Value: true
+        r_y_hip_b0119:
+          Value: true
+        r_y_hip_c7cd2:
+          Value: true
+        r_y_hip_d88cc:
+          Value: true
+        r_y_hip_fbc07:
+          Value: true
+        r_y_shoulder_065bb:
+          Value: true
+        r_y_shoulder_078a4:
+          Value: true
+        r_y_shoulder_11a58:
+          Value: true
+        r_y_shoulder_13173:
+          Value: true
+        r_y_shoulder_15b87:
+          Value: true
+        r_y_shoulder_300cd:
+          Value: true
+        r_y_shoulder_30bda:
+          Value: true
+        r_y_shoulder_3a4fd:
+          Value: true
+        r_y_shoulder_3adfa:
+          Value: true
+        r_y_shoulder_42a79:
+          Value: true
+        r_y_shoulder_499ab:
+          Value: true
+        r_y_shoulder_51b41:
+          Value: true
+        r_y_shoulder_5668a:
+          Value: true
+        r_y_shoulder_5aa08:
+          Value: true
+        r_y_shoulder_69ba8:
+          Value: true
+        r_y_shoulder_6ffdd:
+          Value: true
+        r_y_shoulder_7745c:
+          Value: true
+        r_y_shoulder_8a8ca:
+          Value: true
+        r_y_shoulder_8aafa:
+          Value: true
+        r_y_shoulder_9af23:
+          Value: true
+        r_y_shoulder_a05cc:
+          Value: true
+        r_y_shoulder_a122b:
+          Value: true
+        r_y_shoulder_a1a4f:
+          Value: true
+        r_y_shoulder_a6659:
+          Value: true
+        r_y_shoulder_b0119:
+          Value: true
+        r_y_shoulder_c7cd2:
+          Value: true
+        r_y_shoulder_d88cc:
+          Value: true
+        r_y_shoulder_fbc07:
+          Value: true
+        torso_065bb:
+          Value: true
+        torso_078a4:
+          Value: true
+        torso_11a58:
+          Value: true
+        torso_13173:
+          Value: true
+        torso_15b87:
+          Value: true
+        torso_2f683:
+          Value: true
+        torso_300cd:
+          Value: true
+        torso_30bda:
+          Value: true
+        torso_3a4fd:
+          Value: true
+        torso_3adfa:
+          Value: true
+        torso_412ff:
+          Value: true
+        torso_42a79:
+          Value: true
+        torso_499ab:
+          Value: true
+        torso_51b41:
+          Value: true
+        torso_5668a:
+          Value: true
+        torso_5a3c3:
+          Value: true
+        torso_5aa08:
+          Value: true
+        torso_69ba8:
+          Value: true
+        torso_6ffdd:
+          Value: true
+        torso_7745c:
+          Value: true
+        torso_8a8ca:
+          Value: true
+        torso_8aafa:
+          Value: true
+        torso_9af23:
+          Value: true
+        torso_9d325:
+          Value: true
+        torso_a05cc:
+          Value: true
+        torso_a122b:
+          Value: true
+        torso_a1a4f:
+          Value: true
+        torso_a21c9:
+          Value: true
+        torso_a6659:
+          Value: true
+        torso_aca0a:
+          Value: true
+        torso_ad675:
+          Value: true
+        torso_b0119:
+          Value: true
+        torso_ba178:
+          Value: true
+        torso_c7cd2:
+          Value: true
+        torso_d3175:
+          Value: true
+        torso_d4025:
+          Value: true
+        torso_d88cc:
+          Value: true
+        torso_f1451:
+          Value: true
+        torso_fbc07:
+          Value: true
+        waist_065bb:
+          Value: true
+        waist_078a4:
+          Value: true
+        waist_11a58:
+          Value: true
+        waist_13173:
+          Value: true
+        waist_15b87:
+          Value: true
+        waist_2f683:
+          Value: true
+        waist_300cd:
+          Value: true
+        waist_30bda:
+          Value: true
+        waist_3a4fd:
+          Value: true
+        waist_3adfa:
+          Value: true
+        waist_412ff:
+          Value: true
+        waist_42a79:
+          Value: true
+        waist_499ab:
+          Value: true
+        waist_51b41:
+          Value: true
+        waist_5668a:
+          Value: true
+        waist_5a3c3:
+          Value: true
+        waist_5aa08:
+          Value: true
+        waist_69ba8:
+          Value: true
+        waist_6ffdd:
+          Value: true
+        waist_7745c:
+          Value: true
+        waist_8a8ca:
+          Value: true
+        waist_8aafa:
+          Value: true
+        waist_9af23:
+          Value: true
+        waist_9d325:
+          Value: true
+        waist_a05cc:
+          Value: true
+        waist_a122b:
+          Value: true
+        waist_a1a4f:
+          Value: true
+        waist_a21c9:
+          Value: true
+        waist_a6659:
+          Value: true
+        waist_aca0a:
+          Value: true
+        waist_ad675:
+          Value: true
+        waist_b0119:
+          Value: true
+        waist_ba178:
+          Value: true
+        waist_c7cd2:
+          Value: true
+        waist_d3175:
+          Value: true
+        waist_d4025:
+          Value: true
+        waist_d88cc:
+          Value: true
+        waist_f1451:
+          Value: true
+        waist_fbc07:
+          Value: true
+      Marker Alpha: 1
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Tree:
+        camera_link:
+          camera_color_frame:
+            camera_color_optical_frame:
+              {}
+          camera_depth_frame:
+            camera_depth_optical_frame:
+              {}
+      Update Interval: 0
+      Value: true
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Default Light: true
+    Fixed Frame: camera_link
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz/Interact
+      Hide Inactive Objects: true
+    - Class: rviz/MoveCamera
+    - Class: rviz/Select
+    - Class: rviz/FocusCamera
+    - Class: rviz/Measure
+    - Class: rviz/SetInitialPose
+      Theta std deviation: 0.2617993950843811
+      Topic: /initialpose
+      X std deviation: 0.5
+      Y std deviation: 0.5
+    - Class: rviz/SetGoal
+      Topic: /move_base_simple/goal
+    - Class: rviz/PublishPoint
+      Single click: true
+      Topic: /clicked_point
+  Value: true
+  Views:
+    Current:
+      Class: rviz/Orbit
+      Distance: 31.272350311279297
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.05999999865889549
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Field of View: 0.7853981852531433
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: 0
+      Focal Shape Fixed Size: true
+      Focal Shape Size: 0.05000000074505806
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.009999999776482582
+      Pitch: 0.785398006439209
+      Target Frame: <Fixed Frame>
+      Yaw: 0.785398006439209
+    Saved: ~
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 846
+  Hide Left Dock: false
+  Hide Right Dock: false
+  QMainWindow State: 000000ff00000000fd000000040000000000000156000002b0fc0200000008fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000005c00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000003d000002b0000000c900fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261000000010000010f000002b0fc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073010000003d000002b0000000a400fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000004f30000003efc0100000002fb0000000800540069006d00650100000000000004f3000002eb00fffffffb0000000800540069006d0065010000000000000450000000000000000000000282000002b000000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Selection:
+    collapsed: false
+  Time:
+    collapsed: false
+  Tool Properties:
+    collapsed: false
+  Views:
+    collapsed: false
+  Width: 1267
+  X: 523
+  Y: 71
