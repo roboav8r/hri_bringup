@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<launch>
+
+  <!-- SENSORS -->
+  <!-- Launch the LiDAR -->
+  <include file="$(find urg_node)/launch/urg_lidar.launch" />
+
+
+  <!-- PROCESSING -->
+  <!-- leg_tracker params -->
+  <!-- <param name="forest_file" value="$(find leg_tracker)/config/trained_leg_detector_res=0.33.yaml" /> -->
+  <param name="forest_file" value="$(find leg_tracker)/config/trained_leg_detector_nrg_1.yaml" />
+  <param name="scan_topic" value="/scan" />
+  <param name="fixed_frame" value="laser"/>
+  <param name="scan_frequency" value="10"/>   
+  <param name="detection_threshold" value="0.75" /> 
+  <param name="display_detected_people" value="True" />
+  
+  <!-- run detect_leg_clusters -->  
+  <node pkg="leg_tracker" type="detect_leg_clusters" name="detect_leg_clusters" output="screen"/>
+
+  <!-- run joint_leg_tracker -->
+  <node pkg="leg_tracker" type="joint_leg_tracker.py" name="joint_leg_tracker" output="screen"/>
+ 
+  <!-- run local_occupancy_grid_mapping -->
+  <node pkg="leg_tracker" type="local_occupancy_grid_mapping" name="local_occupancy_grid_mapping" output="screen"/> 
+
+  <!-- UTILITIES -->
+  <!-- Publish static transform -->
+  <node pkg="tf" type="static_transform_publisher" name="map_to_laser" args="0 0 0.30 0 0 0 /map /laser 10"/> 
+
+  <!-- Visualize -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find hri_bringup)/rviz/laser_leg_tracking.rviz"/>
+
+  <!-- Robofleet client to send leg messages -->
+  <include file="$(find robofleet_client)/launch/client.launch" >
+    <arg name="config_file" value="$(find hri_bringup)/config/robofleet_leg_tracker.yaml"/>
+  </include>
+
+
+</launch>
+

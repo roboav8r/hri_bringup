@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<launch>
+
+  <arg name="bag_filename" default="test/leg_data_test" />
+
+  <!-- UTILITIES -->
+  <!-- Publish static transform -->
+  <node pkg="tf" type="static_transform_publisher" name="map_to_laser" args="0 0 0.30 0 0 0 /map /laser 1"/>
+
+  <!-- Visualize -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find hri_bringup)/rviz/check_laser_leg_tracking.rviz"/>
+
+  <!-- PLAY BAG DATA -->
+  <!-- play rosbag -->  
+  <node pkg="rosbag" type="play" name="player" output="screen" required="true" 
+    args="--delay=4
+    --loop
+    --clock
+    --pause
+    --rate=0.5
+    -s 0
+    $(find leg_tracker)/rosbags/$(arg bag_filename).bag"/>
+  <param name="use_sim_time" value="true" />
+
+
+</launch>
+
