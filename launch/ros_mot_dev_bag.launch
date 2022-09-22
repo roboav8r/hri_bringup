@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<launch>
+
+    <arg name="dev_file" default="data/1-person-3.bag" />
+
+    <!-- Main launch file for developing the multiobject tracker -->
+
+    <!-- Set sim time parameter --> 
+    <param name="use_sim_time" type="bool" value="True" />
+
+    <!-- Start leg tracker -->
+    <include file="$(find autonomy_leg_detection)/launch/leg_detection.launch" />
+
+    <!-- Start bag file -->
+    <group unless="$(eval dev_file == '')" >
+        <node pkg="rosbag" type="play" name="player" output="screen" args="--clock --loop --pause $(find ros_multiobject_tracking)/$(arg dev_file)"/>
+    </group>
+
+    <!-- Start tracker -->
+    <include file="$(find ros_multiobject_tracking)/launch/mot.launch" >
+        <arg name="visualize" value="true" />
+    </include>
+
+</launch>
