@@ -3,6 +3,7 @@
 #   geometry_msgs_robofleet
 #   std_srvs_robofleet
 #   move_base_msgs
+#   leg_tracker_robofleet
 
 params:
   # leave blank to run in Direct Mode
@@ -38,7 +39,7 @@ subscribers: [
     # param: type
     # type: string
     # The ROS message type
-    type: "leg_tracker/LegArray",
+    type: "leg_tracker/DetectionArray",
 
     # param: rate_limit (optional)
     # type: double (Hz)
@@ -80,7 +81,7 @@ subscribers: [
     # param: type
     # type: string
     # The ROS message type
-    type: "leg_tracker/LegArray",
+    type: "leg_tracker/DetectionArray",
 
     # param: rate_limit (optional)
     # type: double (Hz)
@@ -222,11 +223,24 @@ incoming_services: [
 ]
 
 outgoing_services: [
-  # {
-  #   client_topic: "/empty_service",
-  #   rbf_topic: "/empty_service",
-  #   type: "std_srvs/Empty"
-  # }
+  {
+    client_topic: "/bag_and_label_arc",
+    rbf_topic: "/bag_and_label_arc",
+    type: "leg_tracker/ArcLabelAndBag"
+  },
+
+  {
+    client_topic: "/bag_and_label_cartesian",
+    rbf_topic: "/bag_and_label_cartesian",
+    type: "leg_tracker/CartesianLabelAndBag"
+  },
+
+  {
+    client_topic: "/bag_and_label_circ",
+    rbf_topic: "/bag_and_label_circ",
+    type: "leg_tracker/CircLabelAndBag"
+  }
+
 ]
 
 incoming_actions: [
