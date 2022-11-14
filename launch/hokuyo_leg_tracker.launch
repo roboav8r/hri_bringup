@@ -3,18 +3,46 @@
 
   <!-- SENSORS -->
   <!-- Launch the LiDAR -->
-  <include file="$(find urg_node)/launch/urg_lidar.launch" />
+  <node name="urg_node_right" pkg="urg_node" type="urg_node" output="screen">
+    <param name="ip_address" value=""/>
+    <param name="serial_port" value="/dev/ttyACM1"/>
+    <param name="serial_baud" value="115200"/>
+    <param name="frame_id" value="laser_right"/>
+    <param name="calibrate_time" value="true"/>
+    <param name="publish_intensity" value="false"/>
+    <param name="publish_multiecho" value="false"/>
+    <param name="angle_min" value="-1.5707963"/>
+    <param name="angle_max" value="1.5707963"/>
+  </node>
+
+  <!-- <node name="urg_node_left" pkg="urg_node" type="urg_node" output="screen">
+    <param name="ip_address" value=""/>
+    <param name="serial_port" value="/dev/ttyACM0"/>
+    <param name="serial_baud" value="115200"/>
+    <param name="frame_id" value="laser_left"/>
+    <param name="calibrate_time" value="true"/>
+    <param name="publish_intensity" value="false"/>
+    <param name="publish_multiecho" value="false"/>
+    <param name="angle_min" value="-1.5707963"/>
+    <param name="angle_max" value="1.5707963"/>
+  </node> -->
+
+  <!-- DESCRIPTION -->
+  <!-- Spawn robot description for visualization -->
+  <include file="$(find walrus_description)/launch/walrus_cage.launch" />
 
 
   <!-- PROCESSING -->
   <!-- leg_tracker params -->
   <!-- <param name="forest_file" value="$(find leg_tracker)/config/trained_leg_detector_res=0.33.yaml" /> -->
   <param name="forest_file" value="$(find leg_tracker)/config/trained_leg_detector_nrg_1.yaml" />
+  <!-- <param name="forest_file" value="$(find leg_tracker)/config/trained_leg_detector_nrg_new.yaml" /> -->
   <param name="scan_topic" value="/scan" />
-  <param name="fixed_frame" value="laser"/>
+  <param name="fixed_frame" value="laser_right"/>
   <param name="scan_frequency" value="10"/>   
   <param name="detection_threshold" value="0.75" /> 
   <param name="display_detected_people" value="True" />
+
   <!-- <rosparam command="load" file="$(find leg_tracker)/config/class_labels.yaml" /> -->
   <rosparam command="load" file="$(find leg_tracker)/config/class_labels.yaml" />
   
@@ -29,7 +57,8 @@
 
   <!-- UTILITIES -->
   <!-- Publish static transform -->
-  <node pkg="tf" type="static_transform_publisher" name="map_to_laser" args="0 0 0.30 0 0 0 /map /laser 10"/> 
+  <node pkg="tf" type="static_transform_publisher" name="map_to_base_link" args="0 0 0.30 0 0 0 /map /base_link 10"/>
+  <node pkg="tf" type="static_transform_publisher" name="laserright_to_laser" args="0 0 0 0 0 0 /laser_right /laser 10"/>  
 
   <!-- Visualize -->
   <node name="rviz" pkg="rviz" type="rviz" args="-d $(find hri_bringup)/rviz/laser_leg_tracking.rviz"/>

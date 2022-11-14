@@ -1,0 +1,19 @@
+<launch>
+
+    <!-- Launch the depthai_ros camera with yolov4 -->
+    <include file="$(find azure_kinect_ros_driver)/launch/driver.launch" />
+
+    <!-- Launch the extractor node -->
+    <!-- <node pkg="ros_body_recognition" type="body_rec_node" name="body_rec_node" output="screen" /> -->
+
+    <!-- Launch the ROS OpenPose node -->
+    <include file="$(find hri_fullbody)/launch/hri_fullbody.launch" >
+        <arg name="use_depth" value="true" />
+        <arg name="rgb_camera" value="rgb" />
+        <arg name="depth_camera" value="depth" />
+        <arg name="depth_camera_topic" value="depth/image_raw" />
+    </include>
+
+    <node type="rviz" name="rviz" pkg="rviz" args="-d $(find hri_fullbody)/rviz/fullbody_urdf_visualization.rviz" output="screen"/>
+
+</launch>

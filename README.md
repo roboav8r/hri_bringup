@@ -36,6 +36,12 @@ rosservice call /bag_and_label_circ "{scan_topic: '/scan', laser_frame: 'laser',
 
 ```
 
+Label the data/extract clusters
+```
+roslaunch leg_tracker extract_positive_training_clusters_yaml.launch filename:="train/not_extracted/arctestbag"
+```
+
+
 Visualize the labeling results
 ```
 roslaunch hri_bringup visualize_scan_bag.launch bag_filename:="test/leg_test_1_extracted"

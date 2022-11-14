@@ -34,7 +34,7 @@ subscribers: [
     # param: rbf_topic
     # type: string
     # The topic name used by robofleet
-    rbf_topic: "/detected_leg_clusters",
+    rbf_topic: "/walrus_cage/detected_leg_clusters",
 
     # param: type
     # type: string
@@ -76,7 +76,7 @@ subscribers: [
     # param: rbf_topic
     # type: string
     # The topic name used by robofleet
-    rbf_topic: "/non_leg_clusters",
+    rbf_topic: "/walrus_cage/non_leg_clusters",
 
     # param: type
     # type: string
@@ -118,7 +118,7 @@ subscribers: [
     # param: rbf_topic
     # type: string
     # The topic name used by robofleet
-    rbf_topic: "/people_detected",
+    rbf_topic: "/walrus_cage/people_detected",
 
     # param: type
     # type: string
@@ -160,7 +160,7 @@ subscribers: [
     # param: rbf_topic
     # type: string
     # The topic name used by robofleet
-    rbf_topic: "/people_tracked",
+    rbf_topic: "/walrus_cage/people_tracked",
 
     # param: type
     # type: string
@@ -225,19 +225,19 @@ incoming_services: [
 outgoing_services: [
   {
     client_topic: "/walrus_cage/bag_and_label_arc",
-    rbf_topic: "/bag_and_label_arc",
+    rbf_topic: "/walrus_cage/bag_and_label_arc",
     type: "leg_tracker/ArcLabelAndBag"
   },
 
   {
     client_topic: "/walrus_cage/bag_and_label_cartesian",
-    rbf_topic: "/bag_and_label_cartesian",
+    rbf_topic: "/walrus_cage/bag_and_label_cartesian",
     type: "leg_tracker/CartesianLabelAndBag"
   },
 
   {
     client_topic: "/walrus_cage/bag_and_label_circ",
-    rbf_topic: "/bag_and_label_circ",
+    rbf_topic: "/walrus_cage/bag_and_label_circ",
     type: "leg_tracker/CircLabelAndBag"
   }
 
