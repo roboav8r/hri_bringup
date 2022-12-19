@@ -21,7 +21,7 @@ roslaunch leg_tracker extract_positive_training_clusters_args.launch x_min:="0.0
 roslaunch leg_tracker extract_positive_training_clusters_yaml.launch filename:="test/leg_test_1"
 
 ```
-ALTERNATIVELY: Call the service to bag and/or label the data!
+## Using the ROS Service Node to bag and label data
 ```
 rosrun leg_tracker leg_tracker_service
 rosservice call /save_bag "topics: ['/tf', '/scan'] filename: 'rosbags/test/testbag' duration_sec: 1" 
@@ -33,16 +33,28 @@ rosservice call /bag_and_label_cartesian "{scan_topic: '/scan', laser_frame: 'la
 rosservice call /bag_and_label_arc "{scan_topic: '/scan', laser_frame: 'laser', label_frame: '/map', class_label: 1, filename: 'rosbags/test/arc_test_leg', min_angle: -45.0, max_angle: 0.0, max_radius: 2.0, duration_sec: 30}"
 
 rosservice call /bag_and_label_circ "{scan_topic: '/scan', laser_frame: 'laser', label_frame: '/map', class_label: 1, filename: 'rosbags/test/circ_test_leg', x_center: 1.0, y_center: -1.0, radius: 1.0, duration_sec: 30}"
-
+```
+### On Philbart
+```
+cd ~/hri_ws/
+source devel/setup.bash
+philbartnrgmaster
+rosservice call /bag_and_label_cartesian "{scan_topic: '/philbart/pcl_scan', laser_frame: 'philbart/ouster_link', label_frame: '/philbart/base_link', class_label: 1, filename: 'rosbags/train/legs_1', x_center: 3.0, y_center: -0.5, x_length: 4.0, y_width: 4.0, yaw: 0.0, duration_sec: 60}"
 ```
 
-Label the data/extract clusters
+
+## Label the data/extract clusters
 ```
-roslaunch leg_tracker extract_positive_training_clusters_yaml.launch filename:="train/not_extracted/arctestbag"
+roslaunch leg_tracker extract_positive_training_clusters_yaml.launch filename:="train/legs_1"
 ```
 
-
-Visualize the labeling results
+## Visualize the labeling results
 ```
 roslaunch hri_bringup visualize_scan_bag.launch bag_filename:="test/leg_test_1_extracted"
+```
+
+## Training the model
+If the labeled results are to your liking, modify the entries in `launch/training/train_leg_detector_nrg_labeled.launch` with the names and labels of the bag files recorded above. Then, run it:
+```
+roslaunch leg_tracker train_leg_detector_nrg_labeled.launch
 ```
