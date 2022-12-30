@@ -20,7 +20,7 @@
         <include file="$(find leg_tracker)/launch/philbart_leg_tracker.launch"/>
 
         <!-- Launch leg tracker robofleet client node -->
-        <node pkg="robofleet_client" type="client" name="leg_tracker_rbf_client" args="$(find leg_tracker_robofleet)/config/leg_tracker.yaml"/>
+        <node pkg="robofleet_client" type="client" name="leg_tracker_rbf_client" args="$(find hri_bringup)/config/philbart_robofleet.yaml"/>
     </group>
 
 </launch>

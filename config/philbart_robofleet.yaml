@@ -1,0 +1,264 @@
+# Requires these plugin packages at runtime:
+#   std_msgs_robofleet
+#   geometry_msgs_robofleet
+#   std_srvs_robofleet
+#   move_base_msgs
+#   leg_tracker_robofleet
+
+params:
+  # leave blank to run in Direct Mode
+  host_url: "ws://192.168.11.11:8080"
+  
+  wait_for_pongs: true
+  max_queue_before_waiting: 5
+
+  # uncomment to run in Direct Mode
+  #direct_mode_port: 8080
+  #direct_mode_bytes_per_sec: 2048000
+
+  # Verbosity 0 - MINIMAL
+  # Verbosity 1 - CONFIG_ONLY
+  # Verbosity 2 - ALL
+  verbosity: 0
+
+  # you may need more threads to handle a large amount of traffic
+  spin_threads: 1
+
+subscribers: [
+  {
+    # param: client_topic
+    # type: string
+    # The topic or service name used by the client
+    client_topic: "/philbart/detected_leg_clusters",
+
+    # param: rbf_topic
+    # type: string
+    # The topic name used by robofleet
+    rbf_topic: "/philbart/detected_leg_clusters",
+
+    # param: type
+    # type: string
+    # The ROS message type
+    type: "leg_tracker/DetectionArray",
+
+    # param: rate_limit (optional)
+    # type: double (Hz)
+    # default: No rate limit
+    # The maximum rate at which the client will transmit for this topic
+    rate_limit: 1.0,
+
+    # param: priority (optional)
+    # type: double
+    # default: 1.0
+    # Older messages are transmitted first, but a message's elapsed time is
+    # weighted by the priority of the topic
+    priority: 1.0,
+
+    # param: no_drop (optional)
+    # type: boolean
+    # default: false
+    # Topics with the no_drop flag receive absolute priority over those without
+    no_drop: false,
+
+    # param: queue_size (optional)
+    # type: integer
+    # default: 1
+    # The client will queue up to this number of messages before starting to drop them
+    queue_size: 10
+  },
+
+  {
+    # param: client_topic
+    # type: string
+    # The topic or service name used by the client
+    client_topic: "/philbart/non_leg_clusters",
+
+    # param: rbf_topic
+    # type: string
+    # The topic name used by robofleet
+    rbf_topic: "/philbart/non_leg_clusters",
+
+    # param: type
+    # type: string
+    # The ROS message type
+    type: "leg_tracker/DetectionArray",
+
+    # param: rate_limit (optional)
+    # type: double (Hz)
+    # default: No rate limit
+    # The maximum rate at which the client will transmit for this topic
+    rate_limit: 1.0,
+
+    # param: priority (optional)
+    # type: double
+    # default: 1.0
+    # Older messages are transmitted first, but a message's elapsed time is
+    # weighted by the priority of the topic
+    priority: 1.0,
+
+    # param: no_drop (optional)
+    # type: boolean
+    # default: false
+    # Topics with the no_drop flag receive absolute priority over those without
+    no_drop: false,
+
+    # param: queue_size (optional)
+    # type: integer
+    # default: 1
+    # The client will queue up to this number of messages before starting to drop them
+    queue_size: 10
+  },
+
+  { 
+    # param: client_topic
+    # type: string
+    # The topic or service name used by the client
+    client_topic: "/philbart/people_detected",
+
+    # param: rbf_topic
+    # type: string
+    # The topic name used by robofleet
+    rbf_topic: "/philbart/people_detected",
+
+    # param: type
+    # type: string
+    # The ROS message type
+    type: "leg_tracker/PersonArray",
+
+    # param: rate_limit (optional)
+    # type: double (Hz)
+    # default: No rate limit
+    # The maximum rate at which the client will transmit for this topic
+    rate_limit: 1.0,
+
+    # param: priority (optional)
+    # type: double
+    # default: 1.0
+    # Older messages are transmitted first, but a message's elapsed time is
+    # weighted by the priority of the topic
+    priority: 1.0,
+
+    # param: no_drop (optional)
+    # type: boolean
+    # default: false
+    # Topics with the no_drop flag receive absolute priority over those without
+    no_drop: false,
+
+    # param: queue_size (optional)
+    # type: integer
+    # default: 1
+    # The client will queue up to this number of messages before starting to drop them
+    queue_size: 10
+  },
+
+  { 
+    # param: client_topic
+    # type: string
+    # The topic or service name used by the client
+    client_topic: "/philbart/people_tracked",
+
+    # param: rbf_topic
+    # type: string
+    # The topic name used by robofleet
+    rbf_topic: "/philbart/people_tracked",
+
+    # param: type
+    # type: string
+    # The ROS message type
+    type: "leg_tracker/PersonArray",
+
+    # param: rate_limit (optional)
+    # type: double (Hz)
+    # default: No rate limit
+    # The maximum rate at which the client will transmit for this topic
+    rate_limit: 1.0,
+
+    # param: priority (optional)
+    # type: double
+    # default: 1.0
+    # Older messages are transmitted first, but a message's elapsed time is
+    # weighted by the priority of the topic
+    priority: 1.0,
+
+    # param: no_drop (optional)
+    # type: boolean
+    # default: false
+    # Topics with the no_drop flag receive absolute priority over those without
+    no_drop: false,
+
+    # param: queue_size (optional)
+    # type: integer
+    # default: 1
+    # The client will queue up to this number of messages before starting to drop them
+    queue_size: 10
+  }
+]
+
+publishers: [
+  # {
+  #   client_topic: "/twist_topic",
+  #   rbf_topic: "/twist_topic",
+  #   type: "geometry_msgs/Twist",
+
+  #   # param: latched (optional)
+  #   # type: boolean
+  #   # default: false
+  #   # Sets up a latched ROS publisher
+  #   latched: false
+  # }
+]
+
+incoming_services: [
+  # {
+  #   client_topic: "/set_camera_info_service",
+  #   rbf_topic: "/set_camera_info_service",
+  #   type: "std_srvs/SetBool",
+
+  #   # timeout (optional)
+  #   # type: double (seconds)
+  #   # default: no timeout
+  #   # Zero indicates no timeout.
+  #   timeout: 10.0
+  # }
+]
+
+outgoing_services: [
+  {
+    client_topic: "/philbart/bag_and_label_arc",
+    rbf_topic: "/philbart/bag_and_label_arc",
+    type: "leg_tracker/ArcLabelAndBag"
+  },
+
+  {
+    client_topic: "/philbart/bag_and_label_cartesian",
+    rbf_topic: "/philbart/bag_and_label_cartesian",
+    type: "leg_tracker/CartesianLabelAndBag"
+  },
+
+  {
+    client_topic: "/philbart/bag_and_label_circ",
+    rbf_topic: "/philbart/bag_and_label_circ",
+    type: "leg_tracker/CircLabelAndBag"
+  }
+
+]
+
+incoming_actions: [
+  # {
+  #   # actions are configured the same as topics,
+  #   # except that no_drop is hardcoded true and latched is hardcoded false
+  #   client_topic: "/move_base",
+  #   rbf_topic: "/move_base",
+  #   type: "move_base_msgs/MoveBase"
+  # }
+]
+
+outgoing_actions: [
+  # {
+  #   # actions are configured the same as topics,
+  #   # except that no_drop is hardcoded true and latched is hardcoded false
+  #   client_topic: "/move_base",
+  #   rbf_topic: "/move_base",
+  #   type: "move_base_msgs/MoveBase"
+  # }
+]
