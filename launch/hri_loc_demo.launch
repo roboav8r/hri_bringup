@@ -4,7 +4,7 @@
 
         <!-- Add OAK-D Camera and link -->
         <include file="$(find depthai_examples)/launch/yolov4_publisher.launch"/>
-        <node pkg="tf" type="static_transform_publisher" name="base_to_oak_d" args="0.15 0 0.575 0 -0.3490659 -1.570796 philbart/base_link philbart/oak-d-base-frame  100"/>
+        <node pkg="tf" type="static_transform_publisher" name="base_to_oak_d" args="0.15 0 0.575 0 -0.3490659 0 philbart/base_link philbart/oak-d-base-frame  100"/>
 
         <!-- Add Launch pointcloud to laserscan node -->
         <node pkg="pointcloud_to_laserscan" type="pointcloud_to_laserscan_node" name="pcl_to_scan_node">
@@ -20,7 +20,7 @@
         <include file="$(find leg_tracker)/launch/philbart_leg_tracker.launch"/>
 
         <!-- Launch leg tracker robofleet client node -->
-
+        <node pkg="robofleet_client" type="client" name="leg_tracker_rbf_client" args="$(find leg_tracker_robofleet)/config/leg_tracker.yaml"/>
     </group>
 
 </launch>
