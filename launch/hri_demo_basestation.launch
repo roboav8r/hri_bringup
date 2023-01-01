@@ -1,0 +1,6 @@
+<launch>
+
+  <!-- Visualize -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find hri_bringup)/rviz/hri_demo.rviz"/>
+
+</launch>
